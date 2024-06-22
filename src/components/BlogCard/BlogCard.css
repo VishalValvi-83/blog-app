@@ -4,6 +4,7 @@
     flex-direction: column;
     margin: 20px;
     border: 1px solid #ddd;
+    background-color: white;
     width: auto;
     border-radius: 10px;
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
@@ -84,7 +85,9 @@
 }
 .side-cards{
     width: 100%;
-    border: 1px solid #e7e6e6;
+    background-color: white;
+
+    /* border: 1px solid #e7e6e6; */
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 12px;
     padding-bottom: 10px;

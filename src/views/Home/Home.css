@@ -17,14 +17,16 @@
 .blog-container{
     width: auto;
     height: max-content;
-    background-color: #ffffff;
+    background: none;
    
 }
 .sidebar-container{
     width: auto;
     height: max-content;
-    padding: 20px;
-    background-color: #ffffff;    
+    margin-top: 20px ;
+    margin-left: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;    
 }
 
 @media (min-width: 768px) {

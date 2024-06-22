@@ -1,42 +1,34 @@
-import './BlogCard.css'
-
-function BlogCard({ title, image, content, author, date, category }) {
-  return (
-    <div className="blog-card-container">
-      <div className="blog-card">
-        <div class="img-wrap">
-          <figure>
-            <img src={image} alt={title} />
-          </figure>
-        </div>
-        <div className='blog-body'>
-          <h2 className='blog-title'>{title}</h2>
-          <p className='blog-content'>{content}</p>
-          <p className='blog-author'>By <strong>{author.name}</strong></p>
-        </div>
-      </div>
-    </div>
-  )
-}
+import './BlogCard.css';
+import Clock from './update.svg';
+import { Link } from 'react-router-dom';
 
 const Sidebar = ({ blogs }) => {
+  if (!blogs) {
+    return <div>No blogs available</div>;
+  }
+
   return (
-    <div className="sidebar-container">
-      <h2 className="sidebar-title">Top Blogs</h2>
-      <ul className="sidebar-list">
+    <div className="side-cards">
+      <h3 className="logo-title">Top Blogs</h3>
+      <ul className="list-unstyled latest-bloglist">
         {blogs.slice(0, 4).map((blog, index) => (
-          <li key={index} className="sidebar-item">
-            <img src={blog.image} alt={blog.title} className="sidebar-image" />
-            <div className="sidebar-content">
-              <h3 className="sidebar-blog-title">{blog.title}</h3>
-              <p className="sidebar-blog-author">By {blog.author.name}</p>
-            </div>
+          <li key={index}>
+            <Link to={`/blog/${blog.id}`}>
+              <span className="blog-date">
+                <img src={Clock} alt="" />
+                {blog.date}
+              </span>
+              <p>{blog.title}</p>
+              <span className="author-details">
+                By : <span className="author-name">{blog.author.name.substring(0, 22)}...</span>
+              </span>
+            </Link>
           </li>
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export { Sidebar }
-export default BlogCard
+
+export default Sidebar;

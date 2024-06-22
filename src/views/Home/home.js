@@ -1,16 +1,16 @@
 import React from 'react'
 import blogs from './../../data';
-import BlogCard, { Sidebar } from './../../components/BlogCard/BlogCard';
+import BlogCard from './../../components/BlogCard/BlogCard';
+import Sidebar from './../../components/BlogCard/sidbar';
 import './Home.css'
 
-
 const home = () => {
-    console.log(blogs);
     return (
         <div className='container'>
             <div className='blog-container'>
                 {blogs.map((blogObject, i) => {
                     const {
+                        id,
                         title,
                         image,
                         content,
@@ -23,6 +23,7 @@ const home = () => {
                     return (
                         <>
                             <BlogCard
+                                id={id}
                                 key={i}
                                 title={title}
                                 image={image}
