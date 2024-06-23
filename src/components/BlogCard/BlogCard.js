@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const BlogCard = ({ id, title, image, content, author, date, category }) => {
   const truncatedTitle = title && title.length > 50  ? title.substring(0, 50) : title;
   const truncatedContent = content && content.length > 70 ? content.substring(0, 70) + '...' : content;
-  const truncatedAuthorName = author && author.name ? author.name.substring(0, 22) + '...' : '';
+  const truncatedAuthorName = author.name  && author.name ? author.name.substring(0, 22) + '...' : '';
 
   return (
     <Link className="blog-card-container" to={`/blog/${id}`}>

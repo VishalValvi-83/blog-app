@@ -13,11 +13,11 @@ const blogs = [
     }
   },
   {
-    id: "The Role of Women Entrepreneurs in India's Startup Ecosystem",
-    title: "The Role of Women Entrepreneurs in India's Startup Ecosystem",
-    image: "https://www.startupindia.gov.in/content/sih/en/bloglist/blogs/women_entrepreneurs/jcr:content/image/file/jcr:content",
+    id : "The Role of Women Entrepreneurs in India's Startup Ecosystem",
+    title : "The Role of Women Entrepreneurs in India's Startup Ecosystem",
+    image : "https://www.startupindia.gov.in/content/sih/en/bloglist/blogs/women_entrepreneurs/jcr:content/image/file/jcr:content",
     content: "An in-depth look at the contributions and challenges faced by women entrepreneurs in India's booming startup scene.",
-    author: { name: "Kiran Bhat", "image": "" },
+    author : { name: "Kiran Bhat", "image": "" },
     date: "May 15, 2023",
     category: ["Entrepreneurship", "Women Empowerment", "Startup Ecosystem"],
     detail : {
@@ -28,10 +28,10 @@ const blogs = [
     }
   },
   {
-    id: "Understanding MSME Registration in India & its Benefits",
-    title: "Understanding MSME Registration in India & its Benefits",
-    image: "https://www.startupindia.gov.in/content/sih/en/bloglist/blogs/understanding_msme_registration_in_India/_jcr_content/image/file/_jcr_content",
-    content: "Learn about DPIIT recognition, its benefits, and how it can help startups scale efficiently.",
+    id : "Understanding MSME Registration in India & its Benefits",
+    title : "Understanding MSME Registration in India & its Benefits",
+    image : "https://www.startupindia.gov.in/content/sih/en/bloglist/blogs/understanding_msme_registration_in_India/_jcr_content/image/file/_jcr_content",
+    content : "Learn about DPIIT recognition, its benefits, and how it can help startups scale efficiently.",
     author: { name: "Shrijay Sheth | Co-founder, LegalWiz", image: "" },
     date: "April 10, 2023",
     category: ["MSME", "Registration", "Startup Benefits"],
@@ -43,11 +43,11 @@ const blogs = [
     }
   },
   {
-    id: 4,
+    id:"Travel and Tourism Sector in India:",
     title: "Travel and Tourism Sector in India:",
     image: "https://www.startupindia.gov.in/content/sih/en/bloglist/blogs/TourismSector/_jcr_content/image/file/_jcr_content",
     content: "Explore the advancements in fintech and how they are shaping the future of finance in India.",
-    author: { name: "Anil Kumar", "image": "" },
+    author : { name: "Anil Kumar", "image": "" },
     date: "March 20, 2023",
     category: ["Travel Tourism ", "Innovation", "Finance"],
     detail: {
@@ -58,6 +58,7 @@ const blogs = [
     }
   },
   {
+    id: "Startup Funding: A Comprehensive Guide",
     title: "Startup Funding: A Comprehensive Guide",
     image: "https://www.startupindia.gov.in/content/sih/en/funding/_jcr_content/main/row_container-banner/row-content/image.img.jpg/1715253508745.jpg",
     content: "A detailed guide on the various funding options available for startups and how to secure them.",
@@ -70,7 +71,7 @@ const blogs = [
     }
   },
   {
-    id: 6,
+    id:"How to strategically plan for your Start-up",
     title: "How to strategically plan for your Start-up",
     image: "https://www.startupindia.gov.in/content/sih/en/bloglist/blogs/how_to_strategically_plan_for_your_start-up/_jcr_content/image/file/_jcr_content",
     content: "Planning is often seen as the antithesis to growth in start-up circles. What is often mistaken though is the essentiality of strategic planning in the long term success of any venture.",
@@ -84,7 +85,7 @@ const blogs = [
     }
   },
   {
-    id: 7,
+    id:"The penetration of the startup ecosystem",
     title: "The penetration of the startup ecosystem",
     image: "https://www.startupindia.gov.in/content/dam/invest-india/Blogs/blog5_3.JPG/_jcr_content/renditions/cq5dam.thumbnail.319.319.png",
     content: "An analysis of how artificial intelligence is influencing the growth and strategies of startups in India.",
@@ -100,7 +101,7 @@ const blogs = [
     }
   },
   {
-    id: 8,
+    id:"SuperStree: Women in the Startup Ecosystem",
     title: "SuperStree: Women in the Startup Ecosystem",
     image: "https://www.startupindia.gov.in/content/sih/en/bloglist/blogs/superstree/_jcr_content/image/file/_jcr_content",
     content: "Essential tips and insights for new entrepreneurs to successfully navigate the startup ecosystem.",
@@ -113,7 +114,7 @@ const blogs = [
 
   },
   {
-    id: 9,
+    id: "Sustainability in the Indian landscape:How women entrepreneurs are championing it",
     title: "Sustainability in the Indian landscape:How women entrepreneurs are championing it",
     image: "https://www.startupindia.gov.in/content/sih/en/bloglist/blogs/sustainability-indian-landscape/_jcr_content/image/file/_jcr_content",
     content: "Startup India Video Podcast Series. Women entrepreneurship has hit a tipping point.. India launched SuperStree: Women in the Startup Ecosystem.",
@@ -134,7 +135,7 @@ const blogs = [
     }
   },
   {
-    id: 10,
+    id: "How Artificial Intelligence can benefit E-Commerce Business in India",
     title: "How Artificial Intelligence can benefit E-Commerce Business in India",
     image: "https://www.startupindia.gov.in/content/sih/en/reources/startup_india_notes/industry_insights/how_artificial_intelligence_can_benefit_e-commerce_business_in-india/_jcr_content/image/file/_jcr_content",
     content: "How Artificial Intelligence can benefit E-Commerce Business in India. Share on Twitter...So how will artificial intelligence impact the E-commerce sector especially i a developing country like",

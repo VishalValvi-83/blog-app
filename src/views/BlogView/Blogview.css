@@ -1,5 +1,6 @@
 .container {
     width: 90%;
+    margin-top: 20px;
     flex-wrap: nowrap;
 }
 
@@ -116,7 +117,14 @@ ul {
     max-width: 100%;
     max-height: 100%
 }
-.share-link img{ 
+
+.share-link img {
     width: 100%;
     max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
 }
