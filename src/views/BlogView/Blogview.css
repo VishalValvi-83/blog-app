@@ -110,10 +110,9 @@ ul {
 }
 
 .share-link {
-    width: 40px !important;
+    width: 30px !important;
     padding-top: 8px !important;
     margin-left: 5px;
-    margin: 0;
     max-width: 100%;
     max-height: 100%
 }
