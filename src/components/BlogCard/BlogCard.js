@@ -8,7 +8,7 @@ const BlogCard = ({ id, title, image, content, author, date, category }) => {
   const truncatedAuthorName = author.name  && author.name ? author.name.substring(0, 22) + '...' : '';
 
   return (
-    <Link className="blog-card-container" to={`/blog/${id}`}>
+    <Link data-aos="fade-up" className="blog-card-container " to={`/blog/${id}`}>
       <div className="blog-card">
         <div className="img-wrap">
           <img src={image} alt={truncatedTitle} />

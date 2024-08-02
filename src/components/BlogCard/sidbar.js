@@ -8,7 +8,7 @@ const Sidebar = ({ blogs }) => {
   }
 
   return (
-    <div className="side-cards">
+    <div className="side-cards " >
       <h3 className="logo-title">Top Blogs</h3>
       <ul className="list-unstyled latest-bloglist">
         {blogs.slice(0, 4).map((blog, index) => (

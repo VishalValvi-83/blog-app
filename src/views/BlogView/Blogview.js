@@ -18,11 +18,11 @@ function Blogview() {
     <div className="container">
       <div className="blog-detailed-Container">
         <div className="blog-header">
-          <div className="title-area clearfix">
+          <div className="title-area">
             <span className="detail-publish-author">By: <strong>{selectedBlog.author.name}</strong></span>
           </div>
           <h1>{selectedBlog.title}</h1>
-          <div className="share-n-tag-wrap clearfix">
+          <div className="share-n-tag-wrap">
             <figure className="blog-img">
               <img src={selectedBlog.image} alt={selectedBlog.title} />
             </figure>
@@ -38,7 +38,7 @@ function Blogview() {
         </div>
         <div>
           <div className="tag-outer-wrap">
-            <a href="/" className="tag blue">Home Page</a>
+            <a href="/" className="tag">Home Page</a>
           </div>
         </div>
         <div className="bottom-share-wrap">
