@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import blogs from './../../data';
 import BlogCard from './../../components/BlogCard/BlogCard';
 import Sidebar from './../../components/BlogCard/sidbar';
 import './Home.css' 
+import BlogCardSkeleton from '../../components/Skeleton';
 
-const home = () => {
+
+function Home(){
+    const [loadSkeleton, setLoadSkeleton] = useState(true)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoadSkeleton(false);
+        }, 2000);
+      }, []);
     return (
         <>
         <h1 className='blog-heading' data-aos="fade-right">Blogs On Startups</h1>
@@ -24,7 +33,7 @@ const home = () => {
 
                     return (
                         <>
-                            <BlogCard
+                           {!loadSkeleton ? <BlogCard
                                 id={id}
                                 key={i}
                                 title={title}
@@ -34,7 +43,8 @@ const home = () => {
                                 date={date}
                                 category={category}
                             />
-
+                            :
+                        <BlogCardSkeleton key={i}/>}
                         </>
                     )
                 })
@@ -50,4 +60,4 @@ const home = () => {
     )
 }
 
-export default home
+export default Home
